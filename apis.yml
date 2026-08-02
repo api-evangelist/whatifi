@@ -1,7 +1,28 @@
 aid: whatifi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/whatifi.png
 name: Whatifi
-description: Whatifi is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Whatifi is a visual financial modeling and scenario planning platform for
+  small and medium businesses, letting founders, fractional CFOs, VFX and gaming
+  studios, and startups model, forecast, and share runway, staffing, capacity,
+  and profit scenarios without spreadsheets or formulas. The product uses an
+  event-based canvas of 30+ pre-built business logic "Events" to build and
+  compare "what if" forecasts in real time, and connects to accounting and
+  banking data through integrations with Excel, Google Sheets, Xero, QuickBooks,
+  Plaid, Railz, and OpenAI. Whatifi is backed by a16z. As of this enrichment
+  pass Whatifi publishes a marketing site, a Notion-hosted help center, and a
+  web application, but exposes no public developer API, SDK, or webhook surface.
 url: https://raw.githubusercontent.com/api-evangelist/whatifi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,41 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Financial Modeling
+- Forecasting
+- Scenario Planning
+- Business Intelligence
+- FinTech
+- SMB
+- Accounting
 apis: []
+common:
+- type: DomainSecurity
+  url: security/whatifi-domain-security.yml
+- type: Website
+  url: https://www.whatifi.io
+- type: HelpCenter
+  url: https://docs.whatifi.io
+- type: Pricing
+  url: https://www.whatifi.io/pricing
+- type: SignUp
+  url: https://app.whatifi.io
+- type: Blog
+  url: https://www.whatifi.io/blogs/blog
+- type: TermsOfService
+  url: https://www.iubenda.com/terms-and-conditions/83071811
+- type: PrivacyPolicy
+  url: https://www.iubenda.com/privacy-policy/83071811
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
